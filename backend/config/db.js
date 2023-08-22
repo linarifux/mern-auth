@@ -4,8 +4,8 @@ const mongoUrl = process.env.MONGO_URI
 
 const conn = async () => {
     try {
-        await mongoose.connect(mongoUrl)
-        console.log('MongoDB Connected...');
+        const con = await mongoose.connect(mongoUrl)
+        console.log('MongoDB Connected...', con.connection.host);
     } catch (error) {
         console.log('Error while connecting to MongoDB');
     }

@@ -17,12 +17,12 @@ db()
 app.use(express.json())
 
 // cookie parser
-app.use(cookieParser)
+app.use(cookieParser())
+
 
 
 // user routes
 app.use('/api/users', userRoute)
-
 
 
 // errorHandling Middlewares
@@ -32,6 +32,6 @@ app.listen(port, () => {
     console.log('server started listening at port: ', port);
 })
 
-app.get('/', (req, res) => {
-    res.status(200).json({success: true, message: 'hello express'})
-})
+// app.get('/', (req, res) => {
+//     res.status(200).json({ success: true, message: 'hello express' })
+// })
