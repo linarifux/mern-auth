@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import {createBrowserRouter, createRoutesFromElements, Route, RouterProvider} from 'react-router-dom'
 import HomeScreen from './screens/HomeScreen.jsx'
 import LoginScreen from './screens/LoginScreen.jsx'
-import RegisterScreen from './components/RegisterScreen.jsx'
+import RegisterScreen from './screens/RegisterScreen.jsx'
 import store from './store.js'
 import {Provider} from 'react-redux'
 
